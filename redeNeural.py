@@ -73,12 +73,10 @@ def RedeNeural():
     plt.show()
 
     modeloFinal = keras.models.load_model("modelo1.keras")
-    erroTeste, acuraciaTeste = modeloFinal.evaluate(dadosTest)
+    lixo, acuraciaTeste = modeloFinal.evaluate(dadosTest)
     porcentagemAcuracia = acuraciaTeste*100
-    porcentagemErro = erroTeste*100
     
-    print(f'Acuracia nos testes: {porcentagemAcuracia:.3f}')
-    print(f'Erro nos tesets: {porcentagemErro:.3f}')
-
+    print(f'Acuracia nos testes: {porcentagemAcuracia:.2f}%')
+    
 if __name__ == '__main__':
     RedeNeural()

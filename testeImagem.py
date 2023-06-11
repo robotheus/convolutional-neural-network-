@@ -15,6 +15,8 @@ def TestaImagem(nomeModelo, nomeImagem):
     if pred:
         print("Imagem de um dog")
     else: print("Imagem de um cat")
+    
+    print(modeloRN.predict(imgArray))
 
 def main():
     nomeImagem = sys.argv[1]

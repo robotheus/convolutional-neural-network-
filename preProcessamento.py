@@ -26,9 +26,9 @@ def preProcessamento():
     os.mkdir(pastaTest + "/dogs")
     os.mkdir(pastaTest + "/cats")
 
-    validacao = 0.10 #porcetagem de imagens que serao destinadas para validacao
-    teste = 0.20 #porcentagem de imagens que serao destinadas para teste
-
+    validacao = 0.10 
+    teste = 0.20 
+    
     dogTrain = glob.glob(diretorio + '/kaggleDataset/train/dog.*')
     catTrain = glob.glob(diretorio + '/kaggleDataset/train/cat.*')
 
